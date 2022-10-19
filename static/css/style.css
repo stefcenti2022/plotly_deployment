@@ -1,0 +1,8 @@
+body {
+  background-color: rgb(48, 171, 208);
+}
+
+.jumbotron {
+  background-image: url('../images/bacteria-background.png');
+  background-size: cover;
+}
