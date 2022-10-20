@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project uses Javascript and Plotly to chart the biodiversity of bacteria for the participants in the bacteria biodiversity study. The goal of the study is to determine which participants will be best suited for producing synthetic beef.
+This project uses Javascript and Plotly to chart the biodiversity of bacteria for the participants involved in a recent bacteria biodiversity study. The goal of the study is to determine which participants will be best suited for producing synthetic beef.
 
-Different synthetic beef companies will be interested in different type of bacteria to be used as a starter for their unique beef products. The charts provided on this site can be used to narrow down the participants based on which ones have the highest Operational Taxonomic Unit (OTU) count of the bacteria desired.
+Several synthetic beef companies are in search of a variety of bacteria types that can be used as a starter to provide a unique synthetic beef product. The charts provided on this site can be used to narrow down the participants in the bacteria biodiversity study based on which ones have the highest Operational Taxonomic Unit (OTU) count of the bacteria desired.
 
 ## Usage
 
