@@ -4,7 +4,7 @@
 
 This project uses Javascript and Plotly to chart the biodiversity of bacteria for the participants in the bacteria biodiversity study. The goal of the study is to determine which participants will be best suited for producing synthetic beef based.
 
-Different synthetic beef companies will be interested in different type of bacteria to be used as a starter for their products. The charts provided on this site can be used to narrow down the participants based on which ones have the highest Operational Taxonic Unit (OTU) count for the bacteria desired by a specific company for their unique beef product.
+Different synthetic beef companies will be interested in different type of bacteria to be used as a starter for their products. The charts provided on this site can be used to narrow down the participants based on which ones have the highest Operational Taxonomic Unit (OTU) count for the bacteria desired by a specific company for their unique beef product.
 
 ## Usage
 
@@ -12,7 +12,7 @@ The Biodiversity Dashboard will be populated with the data for the first partici
 
 <img src="./static/images/dropdown_menu.png" alt="dropdown menu" width="150"/>
 
-Once the particpant is selected the participants demographic information will be displayed along with the following charts:
+Once the participant is selected the participants demographic information will be displayed along with the following charts:
 
 - Top 10 Bacteria Cultures Found: this bar chart can be used to determine if the participant has a good OTU number of the specific bacteria requested. Only the top 10 counts are shown to quickly rule out or chose a participant.
 
@@ -26,7 +26,7 @@ Once the particpant is selected the participants demographic information will be
 
     <img src="./static/images/bubble_chart_hover.png" alt="bar chart" width="600"/>
 
-## Folder/Files
+## Folders/Files
 
 - static: folder containing the following subfolders:
   - css: contains style.css for additional styling of components on the website
