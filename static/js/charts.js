@@ -51,6 +51,9 @@ function buildMetadata(sample) {
 
 // 1. Create the buildCharts function.
 function buildCharts(sample) {
+  // Set a custom font for the chart titles.
+  let custom_font = { color: 'darkblue', family: 'Arial', size: 14 };
+
   // 2. Use d3.json to load and retrieve the samples.json file
   d3.json('samples.json').then((data) => {
     // 3. Create a variable that holds the samples array.
@@ -100,9 +103,9 @@ function buildCharts(sample) {
 
     // 9. Create the layout for the bar chart.
     var barLayout = {
-      title: 'Top 10 Bacteria Cultures Found',
+      title: { text: '<b>Top 10 Bacteria Cultures Found</b>', size: 20 },
       paper_bgcolor: 'rgba(0,0,0,0)',
-      margin: { t: 25, r: 25, l: 25, b: 25 },
+      font: custom_font,
     };
 
     // 10. Use Plotly to plot the data with the layout.
@@ -127,8 +130,6 @@ function buildCharts(sample) {
         color: otu_ids,
         colorscale: 'Earth',
         size: sample_values.map((num) => num * 0.7),
-        //size: sample_values,
-        //        sizemode: 'area',
       },
     };
 
@@ -136,13 +137,14 @@ function buildCharts(sample) {
 
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
-      title: 'Bacteria Cultures Per Sample',
+      title: '<b>Bacteria Cultures Per Sample</b>',
       paper_bgcolor: 'rgba(0,0,0,0)',
       xaxis: {
         title: {
           text: 'OTU ID',
         },
       },
+      font: custom_font,
     };
 
     // 3. Use Plotly to plot the data with the layout.
@@ -206,8 +208,11 @@ function buildCharts(sample) {
 
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = {
+      width: 500,
+      height: 350,
       paper_bgcolor: 'rgba(0,0,0,0)',
-      margin: { t: 25, r: 25, l: 25, b: 25 },
+      margin: { t: 100, b: 0 },
+      font: custom_font,
     };
 
     // 6. Use Plotly to plot the gauge data and layout.

@@ -3,6 +3,12 @@ body {
 }
 
 .jumbotron {
+  text-emphasis-color: white;
   background-image: url('../images/bacteria-background.png');
   background-size: cover;
+}
+
+.jumbotron h1,
+p {
+  color: darkblue;
 }
